@@ -1,0 +1,33 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <!-- Enable dev mode (good for debugging) -->
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <!-- Default action (when opening root URL) -->
+        <action name="">
+            <result>/register.jsp</result>
+        </action>
+
+        <!-- Registration Action -->
+        <action name="register" class="action.RegistrationAction">
+
+            <!-- Success -->
+            <result name="success">/confirmation.jsp</result>
+
+            <!-- Validation fail -->
+            <result name="input">/register.jsp</result>
+
+            <!-- Error -->
+            <result name="error">/error.jsp</result>
+
+        </action>
+
+    </package>
+
+</struts>
