@@ -1,39 +1,14 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-.kotlin
-
-### IntelliJ IDEA ###
-prac6/.idea/modules.xml
-prac6/.idea/jarRepositories.xml
-prac6/.idea/compiler.xml
-prac6/.idea/libraries/
-*.iws
+# IntelliJ
+.idea/
 *.iml
-*.ipr
+*.iws
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Maven
+target/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
+# OS files
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
